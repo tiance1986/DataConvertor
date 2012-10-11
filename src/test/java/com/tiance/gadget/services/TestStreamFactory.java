@@ -11,5 +11,7 @@ public class TestStreamFactory {
 		StreamFactory streamFactory = new StreamFactory();
 		XStream xstream = streamFactory.getInstance();
 		assertTrue(xstream != null);
+		XStream xstream2 = streamFactory.getInstance("JSON");
+		assertTrue(xstream2 != null);
 	}
 }

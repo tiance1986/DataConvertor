@@ -44,7 +44,7 @@ public class StreamFactory {
 	private void createStream(String type) {
 		if(type.equals(JSON)) 
 			xstream = new XStream(new JsonHierarchicalStreamDriver());
-		else if(type.equals(XML))
+		else if(type.equalsIgnoreCase(XML))
 			createStream();
 	}
 	
@@ -60,6 +60,7 @@ public class StreamFactory {
 		for(Object aliasKeyObj : aliasKeys) {
 			try{
 				String qualifiedClassName = formatAliasKey((String)aliasKeyObj);
+				Class<?> a = Class.forName(qualifiedClassName);
 				xstream.alias(prop.getProperty((String)aliasKeyObj), Class.forName(qualifiedClassName));
 			}catch(Exception e) {
 				e.printStackTrace();
