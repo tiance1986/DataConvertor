@@ -1,0 +1,36 @@
+#surefire
+#Fri Oct 12 10:51:33 CST 2012
+testClassesDirectory=D\:\\eclipse\\eclipse_study_w\\DataConvertor\\target\\test-classes
+classPathUrl.4=C\:\\Users\\Administrator\\.m2\\repository\\xmlpull\\xmlpull\\1.1.3.1\\xmlpull-1.1.3.1.jar
+classPathUrl.3=C\:\\Users\\Administrator\\.m2\\repository\\com\\thoughtworks\\xstream\\xstream\\1.4.3\\xstream-1.4.3.jar
+classPathUrl.2=C\:\\Users\\Administrator\\.m2\\repository\\org\\apache\\commons\\commons-lang3\\3.0.1\\commons-lang3-3.0.1.jar
+useManifestOnlyJar=true
+classPathUrl.1=D\:\\eclipse\\eclipse_study_w\\DataConvertor\\target\\classes
+reportsDirectory=D\:\\eclipse\\eclipse_study_w\\DataConvertor\\target\\surefire-reports
+classPathUrl.0=D\:\\eclipse\\eclipse_study_w\\DataConvertor\\target\\test-classes
+dirscanner.0=directoryScannerOptions
+providerConfiguration=org.apache.maven.surefire.junit4.JUnit4Provider
+testSuiteDefinitionTestSourceDirectory=D\:\\eclipse\\eclipse_study_w\\DataConvertor\\src\\test\\java
+surefireClassPathUrl.1=C\:\\Users\\Administrator\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-api\\2.7.1\\surefire-api-2.7.1.jar
+surefireClassPathUrl.0=C\:\\Users\\Administrator\\.m2\\repository\\org\\apache\\maven\\surefire\\surefire-junit4\\2.7.1\\surefire-junit4-2.7.1.jar
+report.2=org.apache.maven.surefire.report.XMLReporter
+useSystemClassLoader=true
+report.1=org.apache.maven.surefire.report.BriefFileReporter
+report.0=org.apache.maven.surefire.report.ForkingConsoleReporter
+excludes0=**/*$*
+isTrimStackTrace=true
+dirscanner.0.params=D\:\\eclipse\\eclipse_study_w\\DataConvertor\\target\\test-classes|[**/Test*.java, **/*Test.java, **/*TestCase.java]|[**/*$*]
+includes2=**/*TestCase.java
+enableAssertions=true
+includes1=**/*Test.java
+failIfNoTests=false
+includes0=**/Test*.java
+dirscanner.0.types=java.io.File|java.util.ArrayList|java.util.ArrayList
+classPathUrl.11=C\:\\Users\\Administrator\\.m2\\repository\\org\\hamcrest\\hamcrest-core\\1.1\\hamcrest-core-1.1.jar
+classPathUrl.10=C\:\\Users\\Administrator\\.m2\\repository\\junit\\junit\\4.10\\junit-4.10.jar
+classPathUrl.9=C\:\\Users\\Administrator\\.m2\\repository\\log4j\\log4j\\1.2.14\\log4j-1.2.14.jar
+classPathUrl.8=C\:\\Users\\Administrator\\.m2\\repository\\commons-logging\\commons-logging\\1.1.1\\commons-logging-1.1.1.jar
+classPathUrl.7=C\:\\Users\\Administrator\\.m2\\repository\\xml-apis\\xml-apis\\1.0.b2\\xml-apis-1.0.b2.jar
+childDelegation=false
+classPathUrl.6=C\:\\Users\\Administrator\\.m2\\repository\\dom4j\\dom4j\\1.6.1\\dom4j-1.6.1.jar
+classPathUrl.5=C\:\\Users\\Administrator\\.m2\\repository\\xpp3\\xpp3_min\\1.1.4c\\xpp3_min-1.1.4c.jar

@@ -7,7 +7,7 @@ import com.tiance.gadget.beans.Customer;
 import com.tiance.gadget.beans.Order;
 import com.tiance.gadget.beans.Product;
 
-public class BeanGenerator {
+public class BeanBuilder {
 	public static final int CUSTOMER = 1001;
 	
 	public static Object getBean() {
@@ -28,7 +28,7 @@ public class BeanGenerator {
 	}
 	
 	public static Object getBean(int type) {
-		if(type == BeanGenerator.CUSTOMER) {
+		if(type == BeanBuilder.CUSTOMER) {
 			return getBean();
 		}
 		return new Object();

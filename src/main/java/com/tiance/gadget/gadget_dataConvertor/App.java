@@ -1,13 +1,11 @@
 package com.tiance.gadget.gadget_dataConvertor;
 
-import java.util.ArrayList;
-import java.util.List;
-
+import com.thoughtworks.xstream.XStream;
 import com.tiance.gadget.beans.Customer;
-import com.tiance.gadget.beans.Order;
-import com.tiance.gadget.beans.Product;
-import com.tiance.gadget.services.BeanGenerator;
-import com.tiance.gadget.services.StructureGenerator;
+import com.tiance.gadget.services.BeanBuilder;
+import com.tiance.gadget.services.StreamFactory;
+import com.tiance.gadget.services.StructureFormat;
+import com.tiance.gadget.services.XmlStreamFactory;
 
 /**
  * Hello world!
@@ -17,10 +15,12 @@ public class App
 {
     public static void main( String[] args )
     {
-        StructureGenerator x = new StructureGenerator();
-        Customer customer = (Customer)BeanGenerator.getBean(BeanGenerator.CUSTOMER);
+        Customer customer = (Customer)BeanBuilder.getBean(BeanBuilder.CUSTOMER);
         
-        String xml = x.javabean2xml(customer);
+        StreamFactory streamFactory = new XmlStreamFactory();
+        XStream xstream = streamFactory.getStream();
+        
+        String xml = StructureFormat.convertObject(xstream, customer);
         
         System.out.println(xml);
         
